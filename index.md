@@ -9,9 +9,9 @@ Check out what I'm working on:
 --------
 
 *   [CTF](ctf/ctf.md)
-*   [Hack the Box](hackthebox/hackthebox.md)
+*   [Hack the Box Rooms](hackthebox/hackthebox.md)
 *   [Homelab](homelab/homelab.md)
 *   [Malware Analysis](malware/malware.md)
-*   [Tryhackme Rooms](tryhackme/tryhackme.md)
+*   [TryHackMe Rooms](tryhackme/tryhackme.md)
 *   [Work](work/work.md)
 
