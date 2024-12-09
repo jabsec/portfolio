@@ -5,4 +5,4 @@ Homelab Stuff
 
 Threat Hunting and Detection Lab
 
-* [homelab](setup.md)
+* [Homelab Setup](setup.md)
