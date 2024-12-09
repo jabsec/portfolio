@@ -1,5 +1,3 @@
-  Jabsec Cybersecurity Porfolio
-
 Homelab Stuff
 =============
 
