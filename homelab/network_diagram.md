@@ -22,6 +22,7 @@ graph TD
     REMnux[REMnux]:::VM
     MORDORDC[MORDOR-DC]:::ADVM
     MORDORWK1[MORDOR-WK1]:::ADVM
+    MORDORSIEM[MORDOR-SIEM]:::ADVM
 
 
     JumpBox --> Router2
@@ -33,11 +34,15 @@ graph TD
     Malware --> FlareVM
     Malware --> REMnux
     Malware --> SIFT
+    FlareVM <--> REMnux
 
     SecLabWAN --> Kali
     SecLabWAN --> CommandoVM
 
     SecLabLAN --> MORDORDC
+    SecLabLAN --> MORDORSIEM
     SecLabLAN --> MORDORWK1
+    MORDORDC <--> MORDORSIEM <--> MORDORWK1
+    
 
 ```
