@@ -13,17 +13,8 @@ I have multiple purpose-built VM's ready to be used when I need them:
 - Kali
 - CommandoVM
 
-
 I also have an Active Directory environment with a domain controller and a windows workstation that is joined to the domain. 
 
 Lastly, I have two "utility" VM's running at all times - one is OPNSense which handles the network segmentation and DHCP services, and the other is a jumpbox/bastion server that I connect to in order to access my homelab. 
-
-The Flare, REMnux, and SIFT VM's are on a very locked down subnet that doesn't get internet access and can't touch any other subnets in the lab (except for when I allow it)
-
-The Active Directory machines are on their own subnet
-
-Kali and CommandoVM are in a subnet that does get internet access. 
-
-The OPNSense VM inherently touches all of the subnets. 
 
 Altogether, it looks something like [this](./network_diagram.md) 
