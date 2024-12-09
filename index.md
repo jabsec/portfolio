@@ -12,3 +12,4 @@ Check out what I'm working on:
 *   [Homelab](homelab/homelab.md)
 *   [Malware Analysis](malware/malware.md)
 *   [Work](work/work.md)
+*   [Tryhackme Rooms] (tryhackme/tryhackme.md)
