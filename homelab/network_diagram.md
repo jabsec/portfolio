@@ -8,21 +8,21 @@ graph TD
     
     Home((Home Subnet<br>192.168.1.0/24))
     Malware((Malware Subnet<br>10.0.0.0/24))
-    SecLabWAN((SecLab WAN Subnet <br> 10.20.20.0/24))
     SecLabLAN((SecLab LAN Subnet <br> 10.10.10.0/24))
+    SecLabWAN((SecLab WAN Subnet <br> 10.20.20.0/24))
 
-    JumpBox[Jump Box Server <br>192.168.1.42]
+    JumpBox[Bastion <br>192.168.1.42]
     PC[My Workstation]
 
     Kali[Kali<br>10.20.20.5]
     CommandoVM[CommandoVM<br>10.20.20.10]
 
-    SIFT[SIFT<br>10.0.0.15]
     FlareVM[FlareVM<br>10.0.0.5]
     REMnux[REMnux<br>10.0.0.10]
+    SIFT[SIFT<br>10.0.0.15]
 
     MORDORDC[MORDOR-DC<br>10.10.10.2]
-    MORDORSIEM[MORDOR-SIEM<br>10.10.10.10]
+    MORDORSIEM[MORDOR-SIEM<br>10.10.10.5]
     MORDORWK1[MORDOR-WK1<br>10.10.10.10]
     
 
@@ -34,7 +34,7 @@ graph TD
 
     subgraph 4 [<b>Lab Network]
 
-    Router2{Lab Router}
+    Router2{OPNSense Router VM}
 
         subgraph 1 [No Internet Access]
             Malware --> FlareVM
@@ -43,12 +43,12 @@ graph TD
         end
     
         subgraph 2 [Internet Access]
-            SecLabWAN --> Kali
-            SecLabWAN --> CommandoVM
-        
             SecLabLAN --> MORDORDC
             SecLabLAN --> MORDORSIEM
             SecLabLAN --> MORDORWK1
+
+            SecLabWAN --> Kali
+            SecLabWAN --> CommandoVM
         end
 
     end
