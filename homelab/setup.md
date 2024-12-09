@@ -26,6 +26,4 @@ Kali and CommandoVM are in a subnet that does get internet access.
 
 The OPNSense VM inherently touches all of the subnets. 
 
-Altogether, it looks something like this: 
-
-![homelab network diagram](https://github.com/jabsec/portfolio/blob/main/homelab/homelab%20diagram.png "Network Diagram")
+Altogether, it looks something like this: [network diagram](./networkdiagram.md) 
