@@ -12,7 +12,7 @@ graph TD
     SecLabLAN((SecLab LAN Subnet <br> 10.10.10.0/24))
 
     JumpBox[Jump Box Server <br>192.168.1.42]
-    PC[My Workstation]:::server
+    PC[My Workstation]
 
     Kali[Kali<br>10.20.20.5]
     CommandoVM[CommandoVM<br>10.20.20.10]
@@ -54,6 +54,9 @@ graph TD
     end
 
     subgraph 3 [<b>Home Network]
+        Router1{Home Router}
+        Router1
+        Router1 --> Home
         Home --> JumpBox
         Home --> PC
         PC-. RDP .-> JumpBox
