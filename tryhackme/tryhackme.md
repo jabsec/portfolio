@@ -5,5 +5,9 @@ Tryhackme Rooms
 
 Tryhackme Rooms I'm Working On
 
+I really enjoy the TryHackMe platform and feel that I have learned a lot. 
+
+I'm currently in the top 1% 
+
 * thm room 1
 * 
