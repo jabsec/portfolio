@@ -26,4 +26,4 @@ Kali and CommandoVM are in a subnet that does get internet access.
 
 The OPNSense VM inherently touches all of the subnets. 
 
-Altogether, it looks something like this: [network diagram](./networkdiagram.md) 
+Altogether, it looks something like [this](./networkdiagram.md) 
