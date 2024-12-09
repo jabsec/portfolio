@@ -8,7 +8,7 @@ I'm a SOC Analyst with a passion for malware analysis, threat hunting, and CTFs.
 Projects
 --------
 
-*   [CTF](ctf/ctf.html)
-*   [Homelab](homelab/homelab.html)
-*   [Malware Analysis](malware/malware.html)
-*   [Work](work/work.html)
+*   [CTF](ctf/ctf.md)
+*   [Homelab](homelab/homelab.md)
+*   [Malware Analysis](malware/malware.md)
+*   [Work](work/work.md)
