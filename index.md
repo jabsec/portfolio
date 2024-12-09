@@ -5,7 +5,7 @@ Welcome to My Cybersecurity Portfolio
 
 I'm a SOC Analyst with a passion for malware analysis, threat hunting, and CTFs.
 
-Check out the categories below
+Check out what I'm working on:
 --------
 
 *   [CTF](ctf/ctf.md)
