@@ -9,9 +9,10 @@ I have multiple purpose-built VM's ready to be used when I need them:
 
 - FlareVM
 - REMnux
+- SIFT
 - Kali
 - CommandoVM
-- SIFT
+
 
 I also have an Active Directory environment with a domain controller and a windows workstation that is joined to the domain. 
 
