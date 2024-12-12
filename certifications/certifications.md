@@ -1,4 +1,4 @@
-Certifications and Achievements
+Certifications and Self Study
 ===============================
 
 This section is to showcase certifications that I have earned during my learning. 
@@ -14,7 +14,7 @@ I've broken this up into official certifications (like CompTIA) and other course
 - Comptia Pentest+
 - Axelos ITIL4
 
-## Achievements
+## Self Study
 
 - Practical Malware Analysis and Triage (TCM Academy)
 - SOC Core Skills (Antisyphon Training)
