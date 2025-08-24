@@ -9,6 +9,7 @@ I've broken this up into official certifications (like CompTIA) and other course
 
 - Comptia A+
 - Comptia Network+
+- Comptia Security+
 - Comptia CYSA+
 - Comptia Project+
 - Comptia Pentest+
