@@ -14,6 +14,7 @@ I've broken this up into official certifications (like CompTIA) and other course
 - Comptia Project+
 - Comptia Pentest+
 - Axelos ITIL4
+- ISC2 SSCP
 
 ## Self Study
 

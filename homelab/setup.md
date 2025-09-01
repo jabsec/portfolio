@@ -10,26 +10,32 @@ My new setup is divided into several different zones for different kinds of acti
 # Malware Analysis
 - For malware analysis (duh). 
 - Two Windows machines (one for the victim and one for analysis), one linux machine for analysis, and a SIEM. 
+- More details [here](./malware_analysis.md) 
  
 # Active Directory Lab
 - To learn more about attacking and defending in an AD environment. 
 - Currently just one domain with a domain controller, a file server, a SQL server, and a couple of Windows workstations. I have plans for expanding this into a whole forest with different trusts, etc. 
+- More details [here](./active_directory.md) 
 
 # CTF's
 - Strictly for CTF's. 
 - A Kali machine, a Windows machine, and a small BIND server to resolve CTF domains. 
+- More details [here](./ctf.md) 
  
 # Red Team Emulation
 - I wanted a way of playing with "real" red team TTP's like Apache redirectors and reverse proxies. 
 - A Windows workstation victim, a Kali box, a small LAMP stack, and a mail server. 
+- More details [here](./redteam_emulation.md) 
 
 # Infrastructure
 - The heart of the whole thing. Pretty much everything that happens in any of the lab sections are able to happen because of the Infrastructure. 
 - A Docker host, a WordPress server, a webserver running Caddy, a bastion host aka jumpbox, a Velociraptor server, a Zeek server, another Kali box, and a Bloodhound server.
+- More details [here](./infrastructure.md) 
 
 # Work
 - Strictly for my work activities.
 - A Debian machine, a Windows 11 machine, and a MISP instance on the way. 
+- More details [here](./work.md) 
 
 <br>
 
