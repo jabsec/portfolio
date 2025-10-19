@@ -3,7 +3,7 @@ Homelab Setup
 
 I recently purchased a used Dell Poweredge r630 from Amazon and have completely overhauled my homelab. The additional RAM and CPU cores has made a lot of things possible that were either impossible on my old equipment or were unbearably slow.
 
-I built this new lab alongside Michael Taggrt's <i>excellent</i> Homelab Almanac v3.0 (https://taggart#tech.com/thav3) and have learned so much, particularly about DevOps tools like Terraform and Ansible. 
+I built this new lab alongside Michael Taggrt's <i>excellent</i> Homelab Almanac v3.0 (https://taggartinstitute.org/p/the-homelab-almanac) and have learned so much, particularly about DevOps tools like Terraform and Ansible. 
 
 My new setup is divided into several different zones for different kinds of activities. I'll break each one of these sections out into their own page but below is a brief summary of each one: 
 
