@@ -1,6 +1,6 @@
   Jabsec Cybersecurity Porfolio
 
-Tryhackme Rooms
+TryHackMe Rooms
 ===============
 
 I really enjoy the TryHackMe platform and feel that I have learned a lot. 
