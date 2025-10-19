@@ -1,6 +1,6 @@
   Jabsec Cybersecurity Porfolio
 
-Hackthebox Rooms
+HackTheBox Rooms
 ================
 
 Rooms I'm working on in Hackthebox
