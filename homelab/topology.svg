@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 552" role="img" aria-label="One OPNsense VM routes every zone; malware has no path out" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13">
+  <title>One OPNsense VM routes every zone; malware has no path out</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8c959f"/></marker>
+  </defs>
+  <rect x="0" y="0" width="760" height="552" rx="8" fill="#ffffff"/>
+  <text x="24" y="28" font-size="15" font-weight="600" fill="#1f2328">One OPNsense VM routes every zone; malware has no path out</text>
+
+  <!-- Home LAN -->
+  <rect x="220" y="48" width="360" height="72" rx="8" fill="none" stroke="#8c959f" stroke-width="1.25"/>
+  <text x="400" y="72" text-anchor="middle" font-weight="600" fill="#1f2328">Home LAN (vmbr0, physical NIC)</text>
+  <text x="400" y="88" text-anchor="middle" font-size="11.5" fill="#1f2328">Internet via home router, my laptop,</text>
+  <text x="400" y="104" text-anchor="middle" font-size="11.5" fill="#1f2328">and the Proxmox management interface</text>
+
+  <!-- Proxmox host container -->
+  <rect x="24" y="144" width="712" height="356" rx="8" fill="none" stroke="#8c959f" stroke-width="1"/>
+  <text x="40" y="166" font-weight="600" fill="#1f2328">Proxmox VE host (Dell R630)</text>
+
+  <!-- connectors -->
+  <g fill="none" stroke="#8c959f" stroke-width="1.25">
+    <path d="M400 120V176" marker-end="url(#arrow)"/>
+    <path d="M400 264V296"/>
+    <path d="M100 328V360"/><path d="M240 328V360"/><path d="M380 328V360"/><path d="M520 328V360"/><path d="M660 328V360"/>
+  </g>
+  <text x="408" y="138" font-size="11.5" fill="#59636e">OPNsense WAN</text>
+  <text x="408" y="286" font-size="11.5" fill="#59636e">802.1Q trunk</text>
+
+  <!-- OPNsense -->
+  <rect x="250" y="176" width="300" height="88" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <text x="400" y="200" text-anchor="middle" font-weight="600" fill="#1f2328">OPNsense (router and firewall)</text>
+  <text x="400" y="216" text-anchor="middle" font-size="11.5" fill="#1f2328">WAN on the home LAN, NAT to the internet</text>
+  <text x="400" y="232" text-anchor="middle" font-size="11.5" fill="#1f2328">one trunk vNIC carrying VLANs 10 to 50</text>
+  <text x="400" y="248" text-anchor="middle" font-size="11.5" fill="#1f2328">default deny, explicit pass rules</text>
+
+  <!-- Malware -->
+  <rect x="566" y="176" width="154" height="88" rx="8" fill="#ffebe9" stroke="#cf222e" stroke-width="1.25" stroke-dasharray="4 4"/>
+  <text x="643" y="200" text-anchor="middle" font-weight="600" fill="#1f2328">MALWARE</text>
+  <text x="643" y="216" text-anchor="middle" font-size="11.5" fill="#1f2328">isolated vmbr2</text>
+  <text x="643" y="232" text-anchor="middle" font-size="11.5" fill="#1f2328">10.10.66.0/24</text>
+  <text x="643" y="248" text-anchor="middle" font-size="11.5" fill="#1f2328">no router, no uplink</text>
+
+  <!-- vmbr1 -->
+  <rect x="40" y="296" width="680" height="32" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.25"/>
+  <text x="380" y="316" text-anchor="middle" fill="#1f2328">vmbr1: OVS bridge, one tagged access port per VM, no host IP</text>
+
+  <!-- MGMT -->
+  <rect x="40" y="360" width="120" height="120" rx="8" fill="none" stroke="#8c959f" stroke-width="1.25"/>
+  <text x="100" y="384" text-anchor="middle" font-weight="600" fill="#1f2328">MGMT</text>
+  <text x="100" y="400" text-anchor="middle" font-size="11.5" fill="#59636e">VLAN 10</text>
+  <text x="100" y="416" text-anchor="middle" font-size="11.5" fill="#1f2328">10.10.10.0/24</text>
+  <text x="100" y="432" text-anchor="middle" font-size="11.5" fill="#1f2328">admin network</text>
+
+  <!-- INFRA -->
+  <rect x="180" y="360" width="120" height="120" rx="8" fill="none" stroke="#8c959f" stroke-width="1.25"/>
+  <text x="240" y="384" text-anchor="middle" font-weight="600" fill="#1f2328">INFRA</text>
+  <text x="240" y="400" text-anchor="middle" font-size="11.5" fill="#59636e">VLAN 20</text>
+  <text x="240" y="416" text-anchor="middle" font-size="11.5" fill="#1f2328">10.10.20.0/24</text>
+  <text x="240" y="432" text-anchor="middle" font-size="11.5" fill="#1f2328">ansible01</text>
+  <text x="240" y="448" text-anchor="middle" font-size="11.5" fill="#1f2328">bastion01, ca01</text>
+  <text x="240" y="464" text-anchor="middle" font-size="11.5" fill="#1f2328">docker01 (SIEM)</text>
+
+  <!-- AD -->
+  <rect x="320" y="360" width="120" height="120" rx="8" fill="#fff8c5" stroke="#bf8700" stroke-width="1.25"/>
+  <text x="380" y="384" text-anchor="middle" font-weight="600" fill="#1f2328">AD (corp)</text>
+  <text x="380" y="400" text-anchor="middle" font-size="11.5" fill="#59636e">VLAN 30</text>
+  <text x="380" y="416" text-anchor="middle" font-size="11.5" fill="#1f2328">10.10.30.0/24</text>
+  <text x="380" y="432" text-anchor="middle" font-size="11.5" fill="#1f2328">dc01, ws01</text>
+  <text x="380" y="448" text-anchor="middle" font-size="11.5" fill="#1f2328">target domain</text>
+
+  <!-- REDTEAM -->
+  <rect x="460" y="360" width="120" height="120" rx="8" fill="#fff8c5" stroke="#bf8700" stroke-width="1.25"/>
+  <text x="520" y="384" text-anchor="middle" font-weight="600" fill="#1f2328">REDTEAM</text>
+  <text x="520" y="400" text-anchor="middle" font-size="11.5" fill="#59636e">VLAN 40</text>
+  <text x="520" y="416" text-anchor="middle" font-size="11.5" fill="#1f2328">10.10.40.0/24</text>
+  <text x="520" y="432" text-anchor="middle" font-size="11.5" fill="#1f2328">kali01</text>
+  <text x="520" y="448" text-anchor="middle" font-size="11.5" fill="#1f2328">attacker</text>
+
+  <!-- CTF -->
+  <rect x="600" y="360" width="120" height="120" rx="8" fill="#fff8c5" stroke="#bf8700" stroke-width="1.25"/>
+  <text x="660" y="384" text-anchor="middle" font-weight="600" fill="#1f2328">CTF</text>
+  <text x="660" y="400" text-anchor="middle" font-size="11.5" fill="#59636e">VLAN 50</text>
+  <text x="660" y="416" text-anchor="middle" font-size="11.5" fill="#1f2328">10.10.50.0/24</text>
+  <text x="660" y="432" text-anchor="middle" font-size="11.5" fill="#1f2328">solver boxes</text>
+  <text x="660" y="448" text-anchor="middle" font-size="11.5" fill="#1f2328">internet only</text>
+
+  <!-- key -->
+  <rect x="24" y="518" width="12" height="12" rx="2" fill="none" stroke="#8c959f" stroke-width="1.25"/>
+  <text x="44" y="528" font-size="11.5" fill="#59636e">clean zone</text>
+  <rect x="150" y="518" width="12" height="12" rx="2" fill="#fff8c5" stroke="#bf8700" stroke-width="1.25"/>
+  <text x="170" y="528" font-size="11.5" fill="#59636e">treated as compromised</text>
+  <rect x="340" y="518" width="12" height="12" rx="2" fill="#ffebe9" stroke="#cf222e" stroke-width="1.25" stroke-dasharray="3 2"/>
+  <text x="360" y="528" font-size="11.5" fill="#59636e">isolated, no route anywhere</text>
+</svg>
