@@ -7,4 +7,3 @@ I'm currently in the top 1%
 
 ![My TryHackMe ranking](thm-ranking.png)
 
-* [Whiterose](Whiterose.md)
