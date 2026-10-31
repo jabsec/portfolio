@@ -60,7 +60,7 @@ Storage is an open decision. The array is currently striped for capacity, so a s
 
 Every routed zone is a VLAN on one internal Open vSwitch bridge, and the only path between zones runs through the OPNsense VM.
 
-![Lab topology: one Proxmox host, three bridges, six zones]({{ '/assets/img/homelab/topology.svg' | relative_url }})
+![Lab topology: one Proxmox host, three bridges, six zones](topology.svg)
 
 OPNsense is the hub: its WAN sits on the home LAN, and one trunk vNIC carries all lab VLANs. Each lab VM gets a tagged port for its zone, so a packet from Kali to a domain controller leaves on VLAN 40, is filtered by the REDTEAM rules, and is routed out on VLAN 30. The malware zone sits on a separate bridge with no OPNsense interface at all, so there is nothing to route through. (docker01, the AD hosts and the CTF and MALWARE zones are planned.)
 
@@ -139,7 +139,7 @@ A second firewall layer runs on Proxmox. It does not copy OPNsense; it covers wh
 
 Packer builds images, Terraform clones VMs from them, and Ansible configures what Terraform created; all three run from one Git repository on ansible01.
 
-![Build pipeline: Packer, then template, then Terraform, then Ansible]({{ '/assets/img/homelab/pipeline.svg' | relative_url }})
+![Build pipeline: Packer, then template, then Terraform, then Ansible](pipeline.svg)
 
 The split follows one rule: software goes into the image, anything secret or frequently changed goes into Ansible. Every change runs through a gate first: `terraform plan` must show the expected changes and no surprise destroys, and Ansible runs with `--check --diff` before it touches a host.
 
@@ -174,7 +174,7 @@ Active Directory Certificate Services will be a separate root inside the AD zone
 
 The lab exists to run Active Directory attacks and then see them from the defender's side. Most of this section is the plan the build is heading toward; the AD hosts and the SIEM are not built yet.
 
-![Purple-team loop: attack, telemetry, SIEM, score, tune]({{ '/assets/img/homelab/purple-loop.svg' | relative_url }})
+![Purple-team loop: attack, telemetry, SIEM, score, tune](purple-loop.svg)
 
 **Attacking AD.** Kali in the REDTEAM zone attacks `corp.lab.internal` across the firewall: Kerberoasting, AS-REP roasting, BloodHound collection, AD CS abuse with Certipy, and relaying. These are network-side attacks, so they work regardless of the antivirus on the workstation. AD has no internet egress, and C2 callbacks are only allowed back into REDTEAM, so my own payloads never call out from my home IP.
 
