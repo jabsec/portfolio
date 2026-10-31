@@ -7,7 +7,7 @@ Check out what I'm working on:
 
 *   [Certifications and Self Study](certifications/certifications.md)
 *   [CTFs](ctf/ctf.md)
-*   [Homelab](homelab/setup.md)
+*   [Homelab](homelab/overview.md)
 *   [Malware Analysis](malware/malware.md)
 *   [Work](work/work.md)
 
