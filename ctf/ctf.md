@@ -1,7 +1,7 @@
-Various CTF's
-=============
+Various CTFs
+============
 
-Tryhackme, HacktheBox, etc
+TryHackMe, Hack The Box, etc.
 
 *   [TryHackMe](tryhackme/tryhackme.md)
-*   [HackTheBox](hackthebox/hackthebox.md)
+*   [Hack The Box](hackthebox/hackthebox.md)

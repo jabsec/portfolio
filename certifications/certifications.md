@@ -7,12 +7,12 @@ I've broken this up into official certifications (like CompTIA) and other course
 
 ## Certifications
 
-- Comptia A+
-- Comptia Network+
-- Comptia Security+
-- Comptia CYSA+
-- Comptia Project+
-- Comptia Pentest+
+- CompTIA A+
+- CompTIA Network+
+- CompTIA Security+
+- CompTIA CySA+
+- CompTIA Project+
+- CompTIA PenTest+
 - Axelos ITIL4
 - ISC2 SSCP
 
